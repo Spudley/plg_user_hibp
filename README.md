@@ -41,6 +41,18 @@ Caveats, Limitations, To-dos and Notes
 * The API is generally very quick to respond, but it it is possible that there may be a delay in response, particularly in the scenario where the system gets a timeout from the API request.
 * Potential future improvement is to issue warnings for passwords that are compromised, but are permitted via the 'Max Compromises' option. User would be allowed to have their password but would be warned that it may be insecure.
 
+References
+----------
+
+Documentation for the HaveIBeenPwned API can be found here: https://haveibeenpwned.com/API/v2
+
+The main HIBP site and further information about it can be found at https://haveibeenpwned.com/
+
+The author of HIBP is Troy Hunt. His personal site can be found here: https://www.troyhunt.com/
+
+
 License
 ----------------
 As with all Joomla extensions, this plugin is licensed under the GPL, specifically in this case, GPLv3. The full license document should have been included with the source code.
+
+The HaveIBeenPwned API is licensed under the Creative Commons Attribution 4.0 International License.
