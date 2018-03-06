@@ -10,7 +10,7 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
-class plgUserHIBP extends JPlugin
+class plgUserHibp extends JPlugin
 {
     protected $autoloadLanguage = true;
 
@@ -26,8 +26,7 @@ class plgUserHIBP extends JPlugin
         }
 
 		if ($this->isPwned(sha1($data['password_clear']))) {
-			JError::raiseError(JText::_('PLG_USER_HIBP_PASSWORD_KNOWN_TO_BE_COMPROMISED'));
-			return false;
+			throw new RuntimeException(JText::_('PLG_USER_HIBP_PASSWORD_KNOWN_TO_BE_COMPROMISED'));
 		}
 
         return true;
@@ -35,8 +34,8 @@ class plgUserHIBP extends JPlugin
 
     public function isPwned($sha1Hash)
     {
-        $firstFive = substr($password, 0, 5);
-        $remainder = strtoupper(substr($password, 5));	//api returns upper case; make this upper too so that it matches.
+        $firstFive = substr($sha1Hash, 0, 5);
+        $remainder = strtoupper(substr($sha1Hash, 5));	//api returns upper case; make this upper too so that it matches.
 
         $http = JHttpFactory::getHttp();
 		$http->setOption('user-agent', 'sc-hibp-plugin-for-Joomla');
