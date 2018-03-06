@@ -27,8 +27,11 @@ This is a standard Joomla plugin. Installation is via Joomla's extension manager
 Usage
 ----------------
 
+After installation, the plugin should be enabled via the Joomla plugin manager.
 
+The plugin has a configuration page, but this only contains a single configurable option:
 
+* Max Compromises: This is an integer value that allows you to specify how many times a password should appear in the HaveIBeenPwned database before we prevent it from being used. The default and ideal setting for this is zero, but you may consider this too strict. The option can be set to any value up to 10, 
 
 
 Caveats, Limitations, To-dos and Notes
@@ -36,7 +39,7 @@ Caveats, Limitations, To-dos and Notes
 
 * In the event that the API is broken or offline, the plugin will fail silently and allow the password to be used.
 * The API is generally very quick to respond, but it it is possible that there may be a delay in response, particularly in the scenario where the system gets a timeout from the API request.
-* A potential future improvement may be to log activity through this plugin. Obviously we wouldn't log any passwords, but it may be useful to see how often our users are getting rejected passwords. It may also be helpful to record any API request failures.
+* Potential future improvement is to issue warnings for passwords that are compromised, but are permitted via the 'Max Compromises' option. User would be allowed to have their password but would be warned that it may be insecure.
 
 License
 ----------------
