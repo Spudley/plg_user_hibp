@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <updates>
 	<update>
-		<name>Joomdle Team Roles</name>
-		<description>Syncs Joomla usergroup teams with Moodle mentor/mentee relationships</description>
-		<element>teamroles</element>
+		<name>User - HIBP (HaveIBeenPwned)</name>
+		<description>Verifies a user's password is secure, using the HaveIBeenPwned (HIBP) API</description>
+		<element>hibp</element>
 		<type>plugin</type>
         <folder>user</folder>
-		<version>1.1.0</version>
+		<version>1.0.0</version>
 		<client>0</client>
-		<infourl title="Joomdle Team Roles plugin">https://github.com/SFWLtd/plg_user_teamroles/releases/tag/1.1.0</infourl>
+		<infourl title="HaveIBeenPwned plugin">https://github.com/SFWLtd/plg_user_hibp/releases/tag/1.0.0</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/SFWLtd/plg_user_teamroles/archive/1.1.0.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/SFWLtd/plg_user_hibp/archive/1.0.0.zip</downloadurl>
 		</downloads>
-		<targetplatform name="joomla" version="3.[56789]" />
-        <php_minimum>5.4.0</php_minimum>
+		<targetplatform name="joomla" version="3.[89]" />
+        <php_minimum>5.6.0</php_minimum>
 	</update>
 </updates>
