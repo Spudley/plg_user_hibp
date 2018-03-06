@@ -23,4 +23,7 @@
             </fieldset>
 		</fields>
 	</config>
+	<updateservers>
+		<server type="extension" name="HIBP Update site">https://raw.githubusercontent.com/Spudley/plg_user_hibp/master/hibp.xml</server>
+	</updateservers>
 </extension>
