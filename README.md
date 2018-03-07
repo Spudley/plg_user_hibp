@@ -37,6 +37,7 @@ The plugin has a configuration page, but this only contains a single configurabl
 Caveats, Limitations, To-dos and Notes
 --------------------------------------
 
+* Currently, triggering the plugin during signup will result in the entire form being cleared, so the user will need to re-enter everything, not just the password. This is annoying, but will suffice for a first release.
 * In the event that the API is broken or offline, the plugin will fail silently and allow the password to be used.
 * The API is generally very quick to respond, but it it is possible that there may be a delay in response, particularly in the scenario where the system gets a timeout from the API request.
 * Potential future improvement is to issue warnings for passwords that are compromised, but are permitted via the 'Max Compromises' option. User would be allowed to have their password but would be warned that it may be insecure.
