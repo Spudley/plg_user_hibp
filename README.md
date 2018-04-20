@@ -16,7 +16,9 @@ In addition, the API also returns the number of times that the specified passwor
 Version History
 ----------------
 
-* v1.0.0     2018-03-06: Initial release.
+* v1.0.1    2018-04-20: Fix error in the update xml link in hibp.xml.
+
+* v1.0.0    2018-03-06: Initial release.
 
 
 Installation
@@ -31,7 +33,7 @@ After installation, the plugin should be enabled via the Joomla plugin manager.
 
 The plugin has a configuration page, but this only contains a single configurable option:
 
-* Max Compromises: This is an integer value that allows you to specify how many times a password should appear in the HaveIBeenPwned database before we prevent it from being used. The default and ideal setting for this is zero, but you may consider this too strict. The option can be set to any value up to 10, 
+* Max Compromises: This is an integer value that allows you to specify how many times a password should appear in the HaveIBeenPwned database before we prevent it from being used. The default and ideal setting for this is zero, but you may consider this too strict. The option can be set to any value up to 10.
 
 
 Caveats, Limitations, To-dos and Notes

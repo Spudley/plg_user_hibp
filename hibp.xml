@@ -6,7 +6,7 @@
 	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
 	<authorEmail>simon@simonchampion.net</authorEmail>
 	<authorUrl></authorUrl>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>PLG_USER_HIBP_DESCRIPTION</description>
 	<files>
 		<filename plugin="hibp">hibp.php</filename>
@@ -24,6 +24,6 @@
 		</fields>
 	</config>
 	<updateservers>
-		<server type="extension" name="HIBP Update site">https://raw.githubusercontent.com/Spudley/plg_user_hibp/master/hibp.xml</server>
+		<server type="extension" name="HIBP Update site">https://raw.githubusercontent.com/Spudley/plg_user_hibp/master/update.xml</server>
 	</updateservers>
 </extension>
