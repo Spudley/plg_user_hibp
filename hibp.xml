@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.8" type="plugin" group="user" client="site" method="upgrade">
-	<name>User - HIBP</name>
+	<name>plg_user_hibp</name>
 	<author>Simon Champion</author>
 	<copyright>Simon Champion</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
