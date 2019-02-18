@@ -8,6 +8,7 @@
 	<authorUrl>http://simonchampion.net/</authorUrl>
 	<version>1.0.1</version>
 	<description>PLG_USER_HIBP_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
 	<files>
 		<folder>language</folder>
 		<filename plugin="hibp">hibp.php</filename>
