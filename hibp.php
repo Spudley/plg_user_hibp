@@ -42,7 +42,7 @@ class plgUserHibp extends JPlugin
 	 * @param   boolean  $isNew  True if a new user is stored.
 	 * @param   array    $data   Holds the new user data.
 	 *
-	 * @return  boolean  True in case the password passed the checks false in case the password is compromised
+	 * @return  boolean  True in case the password passed the checks exception in case the password is compromised
 	 *
 	 * @since   1.0.0
 	 * @throws  RuntimeException If password is invalid
@@ -57,8 +57,6 @@ class plgUserHibp extends JPlugin
 		if ($this->isPwned(sha1($data['password_clear'])))
 		{
 			throw new RuntimeException(Text::_('PLG_USER_HIBP_PASSWORD_KNOWN_TO_BE_COMPROMISED'));
-
-			return false;
 		}
 
 		return true;
