@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.8" type="plugin" group="user" client="site" order="100" method="upgrade">
-	<name>User - HIBP</name>
+<extension version="3.8" type="plugin" group="user" client="site" method="upgrade">
+	<name>plg_user_hibp</name>
 	<author>Simon Champion</author>
 	<copyright>Simon Champion</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
 	<authorEmail>simon@simonchampion.net</authorEmail>
-	<authorUrl></authorUrl>
+	<authorUrl>http://simonchampion.net/</authorUrl>
 	<version>1.0.1</version>
-	<description>PLG_USER_HIBP_DESCRIPTION</description>
+	<description>PLG_USER_HIBP_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
 	<files>
+		<folder>language</folder>
 		<filename plugin="hibp">hibp.php</filename>
-        <filename>index.html</filename>
 	</files>
-    <languages>
-        <language tag="en-GB">language/en-GB/en-GB.plg_user_hibp.ini</language>
-        <language tag="en-GB">language/en-GB/en-GB.plg_user_hibp.sys.ini</language>
-    </languages>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-                <field name="max_pwnage"  type="number" default="0" min="0" max="10" label="PLG_USER_HIBP_MAX_PWNAGE_LABEL" description="PLG_USER_HIBP_MAX_PWNAGE_DESC" />
-            </fieldset>
+				<field
+					name="max_pwnage"
+					label="PLG_USER_HIBP_MAX_PWNAGE_LABEL"
+					description="PLG_USER_HIBP_MAX_PWNAGE_DESC"
+					type="number"
+					default="0"
+					min="0"
+					max="10"
+				/>
+			</fieldset>
 		</fields>
 	</config>
 	<updateservers>
